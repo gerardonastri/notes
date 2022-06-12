@@ -38,7 +38,7 @@ const NotePage = () => {
         method: "PUT",
         headers: {
             'Content-Type': 'application/json',
-            //'X-CSRFToken': csrftoken,
+            "Access-Control-Allow-Origin": "*"
         },
         //credendials: 'include',
         body: JSON.stringify(note)
