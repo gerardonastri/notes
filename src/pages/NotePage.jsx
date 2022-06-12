@@ -45,21 +45,20 @@ const NotePage = () => {
         body: JSON.stringify(note)
     })
   }
-  /*let createNote = async () => {
+  let createNote = async () => {
     fetch(`https://jer-notes-api.herokuapp.com/api/notes/create/`, {
         method: "POST",
         headers: {
-            'Content-Type': 'application/json',
-            'X-CSRFTOKEN': csrftoken
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify(note)
     })
-  } */
-  const createNote = async () => {
+  } 
+  /*const createNote = async () => {
     await axiosReq.post(`notes/create/`, {
       note
     })
-  }
+  }*/
   const deleteNote = async () => {
     try {
       await axiosReq.delete(`notes/${id}/delete/`);
