@@ -1,7 +1,7 @@
 import axios from "axios"
 import Cookies from 'js-cookie'
 
-const  BASE_URL = "http://localhost:8000/api/";
+const  BASE_URL = "https://jer-notes-api.herokuapp.com/api/";
 
 
 //axios.defaults.xsrfCookieName = "csrftoken";

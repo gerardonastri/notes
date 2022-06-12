@@ -34,7 +34,7 @@ const NotePage = () => {
     }
   }*/
   let updateNote = async () => {
-    fetch(`http://localhost:8000/api/notes/${id}/update/`, {
+    fetch(`https://jer-notes-api.herokuapp.com/api/notes/${id}/update/`, {
         method: "PUT",
         headers: {
             'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ const NotePage = () => {
     })
   }
   /*let createNote = async () => {
-    fetch(`http://localhost:8000/api/notes/create/`, {
+    fetch(`https://jer-notes-api.herokuapp.com/api/notes/create/`, {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',
