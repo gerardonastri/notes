@@ -38,8 +38,8 @@ const NotePage = () => {
         method: "PUT",
         headers: {
             'Content-Type': 'application/json',
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Headers": "Content-Type"
+            //"Access-Control-Allow-Origin": "*",
+            //"Access-Control-Allow-Headers": "Content-Type"
         },
         //credendials: 'include',
         body: JSON.stringify(note)
