@@ -10,7 +10,10 @@ const  BASE_URL = "https://jer-notes-api.herokuapp.com/api/";
 
 const axiosReq = axios.create({
     baseURL:  BASE_URL,
-    headers: {"Access-Control-Allow-Origin": "*"}
+    headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Content-Type"
+    }
     //headers: {
      //   'X-CSRFTOKEN': csrftoken
     //},
